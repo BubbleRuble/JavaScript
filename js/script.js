@@ -1,33 +1,35 @@
-const a = 'Зміна *a* в script.js'
+// const a = 'Зміна *a* в script.js'
 
-console.log(a);
+// console.log(a);
 
-const b = 'Зміна *b* в script.js'
+// const b = 'Зміна *b* в script.js'
 
-console.log(b);
+// console.log(b);
 
-const c = 'Зміна *c* в script.js'
+// const c = 'Зміна *c* в script.js'
 
-console.log(c);
+// console.log(c);
 
-const isOpen = false;
+// const isOpen = false;
 
-const isClosed = true;
+// const anton = true;
+
+// const price = 122.42;
 
 
-let age = 18;
+// const absd = typeof price;
 
-console.log('Age', age);
+// console.log(absd);
 
-const type = typeof isOpen;
+// const type = typeof "fsdfs";
 
-console.log(type);
+// console.log(type);
 
-const abc = typeof isClosed;
+// const abc = typeof anton;
 
-console.log(abc);
+// console.log(abc);
 
-alert()
+
 
 
 
