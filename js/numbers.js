@@ -16,3 +16,7 @@ let value = 'Цей рядок неможливо привести до числ
 
 const base = 2;
 const power = 5;
+
+
+const app = '50';
+console.log(app);
