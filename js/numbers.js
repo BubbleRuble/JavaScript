@@ -30,14 +30,21 @@
 // console.log(Math.sqrt(49))
 // console.log(Math.pow(5,0.5));
 
-let base = prompt('Введіть число');
-base = Number(base);
-console.log(base);
+// let base = prompt('Введіть число');
+// base = Number(base);
+// console.log(base);
 
-let power = prompt('Введіть ступінь');
-power = Number(power);
-console.log(power);
+// let power = prompt('Введіть ступінь');
+// power = Number(power);
+// console.log(power);
 
-console.log(Math.pow(base,power));
+// console.log(Math.pow(base,power));
+
+// console.log(Math.random());
+// const min = 10;
+// const max = 100;
+
+// const result = Math.round((Math.random() * (max - min) + min));
+// console.log(result);
 
 
