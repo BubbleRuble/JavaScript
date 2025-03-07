@@ -3,10 +3,11 @@
 "tabWidth": 2,
 "useTabs": false,
 "semi": true,
-"signLeQoute": true,
-"tralingComma": "all",
-"brasketSpacing": true,
-"jsxBracketSameline": false,
-"arrowPaceos": "avoid",
+"singleQuote": true,
+"trailingComma": "all",
+"bracketSpacing": true,
+"jsxBracketSameLine": false,
+"arrowParens": "avoid",
 "proseWrap": "always"
 }
+          
