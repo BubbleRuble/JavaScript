@@ -18,3 +18,19 @@
 // }
 // console.log('totalSalary', totalSalary);
 
+const min = 10;
+const max = 30;
+let total = 0;
+
+for (let i = min; i <= max; i += 1) {
+ if(i % 2 !== 0) {
+ console.log('не парне ', i);
+ continue
+ }
+ console.log('парне: ', i);
+
+ total += i;
+}
+console.log('total', total)
+
+
