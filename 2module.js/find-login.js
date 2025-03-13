@@ -30,4 +30,4 @@ let message = `user ${loginToFind} not find`;
 // console.log(logins.includes('aj4xth3m4n')); 
 
 const alert = (logins.includes('aj4xth3m4n')) ? 'yes' : 'no';
-console.log(alert)
+console.log(alert);
