@@ -12,34 +12,50 @@
 
 
 
-// const fnA = function () {
-//   console.log('викoнується функція А')
-// };
+// const fn = function (value) {
+//   console.log(1);
 
-// const fnB = function () {
-//   console.log('викoнується функція B')
-// };
+//   console.log(2);
 
-// const fnC = function () {
-//   console.log('викoнується функція C')
-// };
+//   if (value < 100) {
+//     return 'Менше за 100';
+//   } 
+//     return 'Більше за 100';
 
+// }
 
-const fn = function (value) {
-  console.log(1);
-
-  console.log(2);
-
-  if (value < 100) {
-    return 'Менше за 100';
-  } 
-    return 'Більше за 100';
-  
-
-  
-}
-
-console.log('Результат функції: ',fn(50));
-console.log('Результат функції: ',fn(500));
+// console.log('Результат функції: ',fn(50));
+// console.log('Результат функції: ',fn(500));
 
 
+
+const fnA = function () {
+  console.log('викoнується функція А');
+
+  fnB();
+};
+
+const fnB = function () {
+  console.log('викoнується функція B');
+
+ 
+  fnC();
+};
+
+const fnC = function () {
+  console.log('викoнується функція C');
+
+  console.log(value);
+};
+
+// console.log('Лог перед викликом функції A');
+fnA();
+// console.log('Лог після викликом функції A');
+
+// console.log('Лог перед викликом функції B');
+// fnB();
+// console.log('Лог після викликом функції B');
+
+// console.log('Лог перед викликом функції C');
+// fnC();
+// console.log('Лог після викликом функції C');
