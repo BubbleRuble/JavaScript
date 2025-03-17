@@ -1,8 +1,6 @@
 // const numbers = [51, 18, 13, 24, 7, 85, 19];
 // let smallestNumber = number[0];
 
-
-
 // const findSmallestNumber = function(numbers) {
 //   let smallestNumber = numbers[0];
 
@@ -13,7 +11,6 @@
 //   }
 //   return smallestNumber;
 // }
-
 
 // console.log(findSmallestNumber([3, 8, 12, -2 , 15]));
 // console.log(findSmallestNumber([100, 54, 8 , 12, 47]));
@@ -34,3 +31,12 @@
 // console.log(findBiggest([1, 291, 76, 54, 104, 11]));
 // console.log(findBiggest([44, 23, 37, 120, 10, 403]));
 
+const changeCase = function (string) {
+  for (const number of numbers) {
+    if (number === lowerCase) {
+      number = toLowerCase;
+    }
+  }
+};
+
+console.log();
