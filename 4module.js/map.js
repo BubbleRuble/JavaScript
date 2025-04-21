@@ -39,7 +39,6 @@ const updatedPlayers = players.map(player =>
 
 console.table(updatedPlayers);
 
-
 const racers = [
   { id: 'racer-1', name: 'Neymar', timePlayed: 110, points: 54, online: false },
   { id: 'racer-2', name: 'Ronaldo', timePlayed: 270, points: 92, online: true },
@@ -48,10 +47,10 @@ const racers = [
 
 const racerToUpdate = 'racer-1';
 
-const updatedRacers = racers.map(racer => 
+const updatedRacers = racers.map(racer =>
   racerToUpdate === racer.id
-  ? {...racer, timePlayed: racer.timePlayed + 50}
-  : racer,
+    ? { ...racer, timePlayed: racer.timePlayed + 50 }
+    : racer,
 );
 
-console.log(updatedRacers)
+console.log(updatedRacers);

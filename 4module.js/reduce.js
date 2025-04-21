@@ -61,4 +61,13 @@ const tweets = [
 
 const allTags = tweets.reduce((acc, tweet) => [...acc, ...tweet.tags], []);
 
-console.log(allTags)
+console.log(allTags);
+
+const tagStats = allTags.reduce((acc, tag) => {
+  return {
+    ...acc,
+    [tag]: acc[tag] ? acc[tag] + 1 : 1,
+  };
+}, {});
+
+console.log(tagStats);
