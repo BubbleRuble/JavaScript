@@ -24,4 +24,7 @@ const aboutPage = '/about';
 
 const linkEl = document.querySelector(`.site-nav__link[href="${aboutPage}"]`);
 
-console.log(linkEl)
+console.log(linkEl);
+linkEl.classList.add('site-nav__link--current');
+
+
