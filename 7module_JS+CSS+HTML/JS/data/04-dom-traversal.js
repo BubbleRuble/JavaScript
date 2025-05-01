@@ -37,6 +37,9 @@ navLinkEl.textContent = 'Settings';
 navLinkEl.href = '/settings';
 navItemEl.appendChild(navLinkEl);
 
+console.log(navItemEl);
+console.log(navEl);
+
 
 
 

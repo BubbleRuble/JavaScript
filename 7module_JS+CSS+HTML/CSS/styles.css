@@ -2,3 +2,13 @@ a.site-nav__link {
   text-decoration: none;
   color: orange;
 }
+
+.color-picker__option {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  margin: 4px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
