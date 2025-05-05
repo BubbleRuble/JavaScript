@@ -12,3 +12,15 @@ a.site-nav__link {
   outline: none;
   cursor: pointer;
 }
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 8px;
+  text-align: center;
+}
+.js-remove-listener{
+  margin-bottom: 100px;
+}

@@ -1,6 +1,7 @@
 import proacts from './proacts.js';
 
 const makeProductCard = ({ name, description, price }) => {
+
   const productEl = document.createElement('article');
   productEl.classList.add('product');
 
@@ -22,7 +23,10 @@ const makeProductCard = ({ name, description, price }) => {
 };
 
 console.log(makeProductCard(proacts[2]));
+const productsContainerEl = document.querySelector('.js-product'); 
 
 const elements = proacts.map(makeProductCard) ;
 
 console.log(elements);
+
+productsContainerEl.append(...elements);
