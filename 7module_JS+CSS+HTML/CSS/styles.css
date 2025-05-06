@@ -24,3 +24,12 @@ td {
 .js-remove-listener{
   margin-bottom: 100px;
 }
+
+.js-input {
+  margin-top: 50px;
+
+}
+
+.output {
+  font-size: 24px;
+}
