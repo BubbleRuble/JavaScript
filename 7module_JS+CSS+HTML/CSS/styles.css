@@ -1,3 +1,11 @@
+/* html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
 a.site-nav__link {
   text-decoration: none;
   color: orange;
@@ -59,3 +67,40 @@ td {
 }
 
 
+.parent, .child, .inner-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parent {
+  width: 1440px;
+  height: 200px;
+  background-color: #b804f4 ;
+}
+
+.child {
+  width: 900px;
+  height: 150px;
+  background-color: #56acfb ;
+}
+
+.inner-child {
+  width: 600px;
+  height: 100px;
+  background-color: #5effa5;
+}
+
+.js-add-btn {
+  margin-bottom: 10px;
+}
+
+.tags {
+  list-style: none;
+  user-select: none;
+  outline: 1px solid purple;
+}
+
+.js-button {
+  background-color: rgba(0, 0, 200, 0.5);
+}
