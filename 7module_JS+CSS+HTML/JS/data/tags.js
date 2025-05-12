@@ -61,7 +61,7 @@ function onTagsContainerClick(e) {
 
   // Якщо видалення не вдалося — значить, треба додати
   if (!selectedTags.delete(tagValue)) {
-    selectedTags.add(tagValue);
+    selectedTags.add(tagValue); 
   }
 
   console.log(selectedTags);
