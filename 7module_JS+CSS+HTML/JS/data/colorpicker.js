@@ -19,12 +19,12 @@ const cardsMarkup = createColorCardsMarkup(colors);
 
 palleteContainer.insertAdjacentHTML('beforeend', cardsMarkup);
 
-palleteContainer.addEventListener('click', onContainerClick)
-
+palleteContainer.addEventListener('click', onContainerClick);
 
 function createColorCardsMarkup(colors) {
-  return colors.map(({ hex, rgb }) => {
-    return `
+  return colors
+    .map(({ hex, rgb }) => {
+      return `
     <div class="color-card">
       <div 
       class="color-swatch" 
@@ -38,23 +38,39 @@ function createColorCardsMarkup(colors) {
       </div>
     </div>
   `;
-  }).join('');
-};
+    })
+    .join('');
+}
 
+function onContainerClick(e) {
+  const isColorWatch = e.target.classList.contains('color-swatch');
 
-function onContainerClick (e) {
-const isColorWatch = e.target.classList.contains('color-swatch');
   if (!isColorWatch) {
-    return
+    return;
   }
-  console.log(e.target.dataset.rgb);
-  
-  const swatchEl = e.target;
-  swatchEl.classList.add('is-active');
 
-  if(!swatchEl.classList.contains('is-active')) {
-    swatchEl.classList.remove('is-active')
+  const swatchEl = e.target;
+  const parentColorCard = swatchEl.closest('.color-card');
+
+  removeActiveCardClass()
+  addActiveCardClass(parentColorCard)
+  setBodyBackground(swatchEl.dataset.hex)
+}
+
+function setBodyBackground(color) {
+  document.body.style.backgroundColor = color;
+}
+
+function removeActiveCardClass() {
+  const currentActiveCard = document.querySelector('.color-card.is-active');
+
+  if (currentActiveCard) {
+    currentActiveCard.classList.remove('is-active');
   }
-  
-};
+}
+
+function addActiveCardClass (card) {
+  card.classList.add('is-active');
+}
+
 

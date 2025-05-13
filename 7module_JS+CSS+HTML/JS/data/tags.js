@@ -46,23 +46,25 @@
  
 // }
 
-const tagsContainer = document.querySelector('.js-tags');
-const selectedTags = new Set();
+// const tagsContainer = document.querySelector('.js-tags');
+// const selectedTags = new Set();
 
-tagsContainer.addEventListener('click', onTagsContainerClick);
+// tagsContainer.addEventListener('click', onTagsContainerClick);
 
-function onTagsContainerClick(e) {
-  if (e.target.nodeName !== 'BUTTON') return;
+// function onTagsContainerClick(e) {
+//   if (e.target.nodeName !== 'BUTTON') return;
 
-  const tagValue = e.target.dataset.value;
+//   const tagValue = e.target.dataset.value;
 
-  // Перемикаємо клас
-  e.target.classList.toggle('js-button');
+//   // Перемикаємо клас
+//   e.target.classList.toggle('js-button');
 
-  // Якщо видалення не вдалося — значить, треба додати
-  if (!selectedTags.delete(tagValue)) {
-    selectedTags.add(tagValue); 
-  }
+//   // Якщо видалення не вдалося — значить, треба додати
+//   if (!selectedTags.delete(tagValue)) {
+//     selectedTags.add(tagValue); 
+//   }
 
-  console.log(selectedTags);
-}
+//   console.log(selectedTags);
+// }
+
+
