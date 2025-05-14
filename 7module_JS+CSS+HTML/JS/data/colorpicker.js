@@ -26,10 +26,10 @@ function createColorCardsMarkup(colors) {
     .map(({ hex, rgb }) => {
       return `
     <div class="color-card">
-      <div 
-      class="color-swatch" 
-      data-hex="${hex}" 
-      data-rgb="${rgb}" 
+      <div
+      class="color-swatch"
+      data-hex="${hex}"
+      data-rgb="${rgb}"
       style="background-color: ${hex}"
     ></div>
     <div class="color-meta">
@@ -72,5 +72,8 @@ function removeActiveCardClass() {
 function addActiveCardClass (card) {
   card.classList.add('is-active');
 }
+
+
+
 
 

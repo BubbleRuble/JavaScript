@@ -1,16 +1,16 @@
-const tech = [
-  { label: 'CSS' },
-  { label: 'JavaSctipr' },
-  { label: 'Node.js' },
-  { label: 'React' },
-  { label: 'Vue' },
-  { label: 'Next.js' },
-  { label: 'Mobx' },
-  { label: 'Redux' },
-  { label: 'React Router' },
-  { label: 'GraphQl' },
-  { label: 'PostgreSQL' },
-  { label: 'MingoDB' },
+const auto = [
+  { label: 'BMW' },
+  { label: 'Mercedes' },
+  { label: 'Porcshe' },
+  { label: 'Lamborghini' },
+  { label: 'Citroen' },
+  { label: 'Fiat' },
+  { label: 'Volkswagen' },
+  { label: 'Skoda' },
+  { label: 'Ferrari' },
+  { label: 'Renault' },
+  { label: 'Opel' },
+  { label: 'Toyota' },
 ];
 
 const refs = {
@@ -18,22 +18,27 @@ const refs = {
   input: document.querySelector('#filter'),
 };
 
-refs.input.addEventListener('input', onFilterChange);
+refs.input.addEventListener('input', _.debounce(onFilterChange, 500));
 
-const listItemsMarkup = createListItemsMarkup(tech);
+const listItemsMarkup = createListMarkup(auto);
+addList(listItemsMarkup);
 
-refs.list.innerHTML = listItemsMarkup;
-
-function createListItemsMarkup(items) {
-  return items.map(item => `<li>${item.label}</li>`).join('');
+function createListMarkup(items) {
+  return items.map(el => `<li>${el.label}</li>`).join('');
 }
 
 function onFilterChange(e) {
+  console.log('INPUT');
   const filter = e.target.value.toLowerCase();
 
-  const filteredItems = tech.filter(t =>
-    t.label.toLowerCase().includes(filter),
+  const filteredItems = auto.filter(el =>
+    el.label.toLowerCase().includes(filter),
   );
 
-  console.log(filteredItems);
+  const listItemsMarkup = createListMarkup(filteredItems);
+  addList(listItemsMarkup);
+}
+
+function addList(markup) {
+  refs.list.innerHTML = markup;
 }
