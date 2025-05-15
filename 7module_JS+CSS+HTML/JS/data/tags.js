@@ -1,26 +1,26 @@
-// const tagsContainer = document.querySelector('.js-tags');
-// let selectedTag = null;
+const tagsContainer = document.querySelector('.js-tags');
+let selectedTag = null;
 
-// tagsContainer.addEventListener('click', onTagsContainerClick);
+tagsContainer.addEventListener('click', onTagsContainerClick);
 
-// function onTagsContainerClick(e) {
-//   if (e.target.nodeName !== 'BUTTON') {
-//     return;
-//   }
-//   const currentActiveBtn = document.querySelector('.js-button');
+function onTagsContainerClick(e) {
+  if (e.target.nodeName !== 'BUTTON') {
+    return;
+  }
+  const currentActiveBtn = document.querySelector('.js-button');
 
-//   if (currentActiveBtn) {
-//     currentActiveBtn.classList.remove('js-button');
-//   }
+  if (currentActiveBtn) {
+    currentActiveBtn.classList.remove('js-button');
+  }
 
-//   // currentActiveBtn?.classList.remove('js-button');
+  // currentActiveBtn?.classList.remove('js-button');
 
-//   const nextActiveButton = e.target;
-//   nextActiveButton?.classList.add('js-button');
+  const nextActiveButton = e.target;
+  nextActiveButton?.classList.add('js-button');
 
-//   selectedTag = nextActiveButton.dataset.value;
-//   console.log(selectedTag);
-// }
+  selectedTag = nextActiveButton.dataset.value;
+  console.log(selectedTag);
+}
 
 
 // const tagsContainer = document.querySelector('.js-tags');
