@@ -84,6 +84,7 @@ function createGalleryMarkup(images) {
 </li>`;
     })
     .join('');
+    
 }
 
 function addMarkup() {
@@ -130,9 +131,18 @@ function onModalWindowHandle(e) {
   }
 }
 
-containerEl.addEventListener('click',onModalWindowCLick)
+containerEl.addEventListener('click', onModalWindowCLick)
 
 function onModalWindowCLick (e) {
-  if (e.target.nodeName !== 'a')
-    return
+  e.preventDefault();
+
+  const imgEl = e.target;
+
+  if (imgEl.nodeName !== 'IMG') return ;
+
+  const imgSrc = imgEl.dataset.source;
+  const imgDescr = imgEl.alt;
+
+  openModalWindow({ original: imgSrc, description:imgDescr });
 }
+
