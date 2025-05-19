@@ -1,0 +1,19 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "NPM basics yap",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BubbleRuble/JavaScript.git"
+  },
+  "author": "Andrii Violin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BubbleRuble/JavaScript/issues"
+  },
+  "homepage": "https://github.com/BubbleRuble/JavaScript#readme"
+}
