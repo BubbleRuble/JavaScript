@@ -2,11 +2,9 @@
   "name": "node",
   "version": "1.0.0",
   "description": "NPM basics yap",
-  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "prestart": "echo \"ЦЕ ПРЕСТАРТ\"",
-    "poststart": "echo \"ЦЕ ПІСЛЯСТАРТ\""
+    "dev": "parcel src/src.html",
+    "buildpars": "parcel build src/src.html"
   },
   "repository": {
     "type": "git",
@@ -20,5 +18,8 @@
   "homepage": "https://github.com/BubbleRuble/JavaScript#readme",
   "dependencies": {
     "joi": "^17.13.3"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.1"
   }
 }
